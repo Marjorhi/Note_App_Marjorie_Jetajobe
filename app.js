@@ -19,3 +19,10 @@ if(data[2] == 'add') {
     // Add note to note.txt
     add(note, oldNote)
 }
+
+if(data[2] == 'read') {
+    // Import present
+    const present = require('./present')
+    
+    present(read())
+}
