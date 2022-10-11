@@ -16,5 +16,6 @@ if(data[2] == 'add') {
     }
     // Get old note value
     var oldNote = read()
-    
+    // Add note to note.txt
+    add(note, oldNote)
 }
