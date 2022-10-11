@@ -14,4 +14,7 @@ if(data[2] == 'add') {
         title: data[4],
         body: data[5]
     }
+    // Get old note value
+    var oldNote = read()
+    
 }
