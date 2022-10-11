@@ -35,3 +35,11 @@ if(data[2]==="delete") {
     del  (id, oldNote);
     console.log(read())
 }
+
+if(data[2]==="update") {
+    let note ={
+        id:data [3],
+        title:data[4],
+        body:data[5]
+    }
+}
