@@ -30,6 +30,7 @@ if(data[2] == 'read') {
 if(data[2]==="delete") {
     let id = data [3]
     let oldNote = read()
+
     let del = require("./del")
     del  (id, oldNote);
     console.log(read())
