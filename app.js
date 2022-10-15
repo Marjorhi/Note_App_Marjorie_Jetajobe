@@ -2,17 +2,18 @@ const add = require('./add')
 const write = require('./write')
 const read = require ('./read')
 
+
 // get user input
-const data = process.argv
+const cmd = process.argv
 
 var note = {}
 
-if(data[2] == 'add') {
+if(cmd[2] == 'add') {
     // Build Object
     note = { 
-        id: data[3],
-        title: data[4],
-        body: data[5]
+        id: cmd[3],
+        title: cmd[4],
+        body: cmd[5]
     }
     // Get old note value
     var oldNote = read()
@@ -20,15 +21,15 @@ if(data[2] == 'add') {
     add(note, oldNote)
 }
 
-if(data[2] == 'read') {
+if(cmd[2] == 'read') {
     // Import present
     const present = require('./present')
     
     present(read())
 }
 
-if(data[2]==="delete") {
-    let id = data [3]
+if(cmd[2]==="delete") {
+    let id = cmd [3]
     let oldNote = read()
 
     let del = require("./del")
@@ -36,10 +37,19 @@ if(data[2]==="delete") {
     console.log(read())
 }
 
-if(data[2]==="update") {
-    let note ={
-        id:data [3],
-        title:data[4],
-        body:data[5]
+if(cmd[2]==="update") 
+    {
+    let note = 
+    {
+        id:cmd[3],
+        title:cmd[4],
+        body:cmd[5]
     }
+
+    let oldNote = read()
+    let udate = require("./udate")
+   
+
+    udate (note, oldNote);
+    console.log(read())
 }
