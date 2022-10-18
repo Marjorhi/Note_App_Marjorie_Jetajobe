@@ -1,21 +1,23 @@
-# _NOTE APP_
-
- *✔Add Module* -
-npm start add "id" "title" "body"
+# __NOTE APP__
 
 
- *✔Delete module* -
- npm start delete "id"
+ **✔Add Module** -
+_npm start add "id" "title" "body"_
 
 
- *✔Read module* -
-  npm start read
+ **✔Delete module** -
+ _npm start delete "id"_
 
- *✔Update module* -
-  npm start update "id" "title" "body"
+
+ **✔Read module** -
+  _npm start read_
+
+ **✔Update module** -
+  _npm start update "id" "title" "body"_
+
 
 ## Author 💻
-
 [****Marjorie Flores Jetajobe****](https://github.com/Marjorhi)
 
- *BSIT 3-3*
+ **BSIT 3-3** 
+
