@@ -1,5 +1,5 @@
 const fs = require ('fs');
-const write = function(cmd="Nothing") {
-    fs.writeFileSync('Note.txt', cmd);
+const write = function(data="Nothing") {
+    fs.writeFileSync('note.txt', data);
 }
 module.exports=write

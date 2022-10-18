@@ -7,6 +7,6 @@ const add = function(note=[], oldNote) {
 
     let objectNote = JSON.stringify(finalNote)
 
-    fs.writeFileSync('Note.txt', objectNote)
+    fs.writeFileSync('note.txt', objectNote)
 }
 module.exports=add

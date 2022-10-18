@@ -1,14 +1,15 @@
 const fs = require ('fs')
-const update = function (note, oldNote) {
+const udate = function (note, oldNote) {
     const oNote = JSON.parse(oldNote)
-    const  newNote = oNote.map( function(n,idx){
-        if (n.id != note.id,
-            n.title != note.title,      
-            n.body != note.body)
+
+    const  newNote = oNote.map(function(n,index){
+        if (n.id == note.id) 
             {
-            return n
+            n.title = note.title,
+            n.body = note.body
             }
+            return n
     })
-    fs.writeFileSync("./Note.txt", JSON.stringify(newNote))
+    fs.writeFileSync("./note.txt", JSON.stringify(newNote))
 }
-module.exports=update
+module.exports=udate

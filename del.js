@@ -4,6 +4,6 @@ const del = function(id,oldNote) {
     const newNote = note.filter(function(n,idx) {
     return n.id !== id
     })
-    fs.writeFileSync("./Note.txt", JSON.stringify(newNote))
+    fs.writeFileSync("./note.txt", JSON.stringify(newNote))
 }
 module.exports=del
